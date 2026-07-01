@@ -1,0 +1,22 @@
+:root{
+    --color-primary-navy:#0c2340;
+    --color-accent-blue:#2e7bf0;
+    --color-neutral-light:#f4f6f8;
+    --color-text-primary:#1a1d21;
+    --color-text-secondary:#6b7280;
+    --color-border-neutral:#e2e5e9;
+}
+:root{
+    --font-h1:2.5rem;
+    --font-h2:1.75rem;
+    --font-h3:1.25rem;
+    --font-body:1rem;
+    --font-small:0.8rem;
+}
+:root{
+    --weight-h1:600;
+    --weight-h2:600;
+    --weight-h3:500;
+    --weight-body:400;
+    --weight-small:400;
+}
