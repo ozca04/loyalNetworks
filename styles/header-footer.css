@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 :root{
     --color-primary-navy:#0c2340;
     --color-accent-blue:#2e7bf0;
@@ -19,4 +22,33 @@
     --weight-h3:500;
     --weight-body:400;
     --weight-small:400;
+}
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--color-primary-navy);
+    padding: 1.5rem;
+    gap: 1rem;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 30rem;
+    padding-right: 2rem;
+    border-right: 0.2rem solid var(--color-border-neutral);
+}
+.search-icon img{
+    width: 2rem;
+    height: 2rem;
+}
+.links{
+    gap: 5rem;
+}
+.links a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: var(--font-h2);
 }
