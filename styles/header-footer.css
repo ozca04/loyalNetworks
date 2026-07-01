@@ -43,10 +43,10 @@ header{
     width: 2rem;
     height: 2rem;
 }
-.links{
+.links-header{
     gap: 5rem;
 }
-.links a{
+.links-header a{
     text-decoration: none;
     color: whitesmoke;
     font-family: 'Space Grotesk', sans-serif;
