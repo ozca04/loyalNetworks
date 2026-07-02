@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
 }
 :root{
     --color-primary-navy:#0c2340;
@@ -44,11 +45,60 @@ header{
     height: 2rem;
 }
 .links-header{
-    gap: 5rem;
+    display: flex;
+    justify-content: space-between;
 }
 .links-header a{
     text-decoration: none;
     color: whitesmoke;
-    font-family: 'Space Grotesk', sans-serif;
     font-size: var(--font-h2);
+}
+/**/
+/**/
+footer{
+    display: grid;
+    background-color: var(--color-primary-navy);
+    padding: 1.5rem;
+    gap: 1rem;
+}
+.footerTopPart{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.footerTopPart h1{
+    padding-top: 0.4rem;
+}
+/**/
+.footerTopPart-FirstColumn img{
+    width: 25rem;
+}
+.footerTopPart-FirstColumn p{
+    padding-top: 0.5rem;
+    color: var(--color-text-secondary);
+}
+/**/
+
+.footerTopPart-SecondColumn a{
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+.footerTopPart-SecondColumn h3{
+        padding-top: 1rem;
+}
+/**/
+.footerTopPart-ThirdColumn p{
+    padding-top: 1rem;
+    color: var(--color-text-secondary);
+}
+
+.footerTopPart-FourthColumn img{   
+    width: 3rem;
+    height: 3rem;
+}
+.footerTopPart-FourthColumn-icons {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
 }
