@@ -60,6 +60,7 @@ footer{
     background-color: var(--color-primary-navy);
     padding: 1.5rem;
     gap: 1rem;
+    padding-top: 2rem;
 }
 .footerTopPart{
     display: flex;
