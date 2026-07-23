@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/header-footer.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <div class="header logo-container">
+            <img class="logo" src="assets/logo_w.png" alt="Loyal Networks">
+        </div>
+        <div class="header search-icon">
+            <img src="assets/search-13-32.png" alt="Search">
+        </div>
+        <nav class="header links-header">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <section class="contact-hero">
+        <h1>Let's discuss your infrastructure strategy</h1>
+        <p>Whether you're planning a new deployment or reviewing your current environment, every engagement starts
+            with a structured conversation about your goals, challenges and timeline.</p>
+    </section>
+
+    <div class="contact-wrap">
+        <div class="contact-info">
+            <div class="info-card">
+                <h3>Address</h3>
+                <p>Chiswick Business Park<br>566 Chiswick High Road<br>London, UK</p>
+            </div>
+            <div class="info-card">
+                <h3>Email</h3>
+                <p>info@loyalnetworks.co.uk</p>
+            </div>
+            <div class="info-card">
+                <h3>Phone</h3>
+                <p>+44 20 xxxx xxxx</p>
+            </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group">
+                <label for="name">Full name *</label>
+                <input type="text" id="name" name="name" required>
+                <span class="field-error" id="name-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email address *</label>
+                <input type="email" id="email" name="email" required>
+                <span class="field-error" id="email-error"></span>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+            </div>
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <span class="field-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn-primary">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+
+    <footer>
+        <section class="footerTopPart">
+            <div class="footerTopPart-FirstColumn">
+                <img src="assets/logo_w.png" alt="Loyal Networks">
+                <p>Cisco-led network <br> infrastructure, security and <br> support for SME to enterprise</p>
+            </div>
+            <div class="footerTopPart-SecondColumn">
+                <h4>Site</h4>
+                <h3><a href="index.html">Home</a></h3>
+                <h3><a href="services.html">Services</a></h3>
+                <h3><a href="aboutUs.html">About Us</a></h3>
+                <h3><a href="contact.html">Contact</a></h3>
+
+            </div>
+            <div class="footerTopPart-ThirdColumn">
+                <h4>Contact</h4>
+                <p>Contact@loyalnetworks.co.uk <br>+44 20 xxxx xxxx <br>London, United Kingdom</p>
+            </div>
+            <div class="footerTopPart-FourthColumn">
+                <h4>Follow</h4>
+                <div class="footerTopPart-FourthColumn-icons">
+                    <a href="#" aria-label="Loyal Networks on Instagram"><img src="assets/instagram.png" alt=""></a>
+                    <a href="#" aria-label="Loyal Networks on Twitter"><img src="assets/twitter.png" alt=""></a>
+                    <a href="#" aria-label="Loyal Networks on Facebook"><img src="assets/communication.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="footerBottomPart">
+            <h5></h5>
+            <h5></h5>
+            <h5></h5>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
