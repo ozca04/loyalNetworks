@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>homePage</title>
 </head>
 
 <body>
     <header>
         <div class="header logo-container">
-            <img class="logo" src="assets/logo_w.png" alt="logo">
+            <img class="logo" src="assets/logo_w.png" alt="Loyal Networks">
         </div>
         <div class="header search-icon">
-            <img src="assets/search-13-32.png" alt="search-icon">
+            <img src="assets/search-13-32.png" alt="Search">
         </div>
         <nav class="header links-header">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="aboutUs.html">About Us</a>
         </nav>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
 
     <main>
@@ -40,10 +47,14 @@
         </section>
 
         <section class="services">
-            <p class="services-title">Loyal Networks provides a variety of services</p>
+            <h2 class="services-title">Loyal Networks provides a variety of services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <img src="assets/network-icon.png" alt="" class="service-icon">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <rect x="3" y="4" width="18" height="12" rx="1" />
+                        <line x1="8" y1="20" x2="16" y2="20" />
+                        <line x1="12" y1="16" x2="12" y2="20" />
+                    </svg>
                     <div>
                         <p class="service-name">Network infrastructure</p>
                         <p class="service-desc">Design, deployment and ongoing management of resilient enterprise
@@ -52,7 +63,10 @@
                     <a href="services.html">Learn more →</a>
                 </div>
                 <div class="service-card">
-                    <img src="assets/security-icon.png" alt="" class="service-icon">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M12 3l7 3v5c0 5-3 7.5-7 9-4-1.5-7-4-7-9V6z" />
+                        <path d="M9.5 12l1.8 1.8L14.5 10" />
+                    </svg>
                     <div>
                         <p class="service-name">Security</p>
                         <p class="service-desc">Governance-driven protection across endpoints, access and
@@ -61,7 +75,9 @@
                     <a href="services.html">Learn more →</a>
                 </div>
                 <div class="service-card">
-                    <img src="assets/cloud-icon.png" alt="" class="service-icon">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M7 17a4 4 0 010-8 5 5 0 019.6-1.6A4.5 4.5 0 0117 17H7z" />
+                    </svg>
                     <div>
                         <p class="service-name">Cloud & connectivity</p>
                         <p class="service-desc">Hybrid, scalable setups built around how your business actually works.
@@ -90,19 +106,40 @@
             <hr class="divider">
             <p class="sectors-title">Trusted across sectors</p>
             <div class="sectors">
-                <div class="sector"><img src="assets/finance-icon.png" alt="">
+                <div class="sector">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+                    </svg>
                     <p>Finance</p>
                 </div>
-                <div class="sector"><img src="assets/health-icon.png" alt="">
+                <div class="sector">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path
+                            d="M12 21s-7-4.35-9.5-8.5C.7 8.9 2.6 5 6.2 5 8.4 5 10 6.2 12 8.3 14 6.2 15.6 5 17.8 5c3.6 0 5.5 3.9 3.7 7.5C19 16.65 12 21 12 21z" />
+                    </svg>
                     <p>Healthcare</p>
                 </div>
-                <div class="sector"><img src="assets/edu-icon.png" alt="">
+                <div class="sector">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M12 4L2 9l10 5 10-5-10-5z" />
+                        <path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5" />
+                    </svg>
                     <p>Education</p>
                 </div>
-                <div class="sector"><img src="assets/mfg-icon.png" alt="">
+                <div class="sector">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <circle cx="12" cy="12" r="3" />
+                        <path
+                            d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 11-4 0v-.09a1.65 1.65 0 00-1-1.51 1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 110-4h.09a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 114 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 110 4h-.09a1.65 1.65 0 00-1.51 1z" />
+                    </svg>
                     <p>Manufacturing</p>
                 </div>
-                <div class="sector"><img src="assets/retail-icon.png" alt="">
+                <div class="sector">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                        <path d="M3 9l1.5-5h15L21 9" />
+                        <path d="M3 9h18v11H3z" />
+                        <path d="M9 13h6" />
+                    </svg>
                     <p>Retail</p>
                 </div>
             </div>
@@ -120,26 +157,26 @@
     <footer>
         <section class="footerTopPart">
             <div class="footerTopPart-FirstColumn">
-                <img src="assets/logo_w.png" alt="">
+                <img src="assets/logo_w.png" alt="Loyal Networks">
                 <p>Cisco-led network <br> infrastructure, security and <br> support for SME to enterprise</p>
             </div>
             <div class="footerTopPart-SecondColumn">
-                <h1>Site</h1>
+                <h4>Site</h4>
                 <h3><a href="index.html">Home</a></h3>
                 <h3><a href="services.html">Services</a></h3>
                 <h3><a href="aboutUs.html">About Us</a></h3>
 
             </div>
             <div class="footerTopPart-ThirdColumn">
-                <h1>Contact</h1>
+                <h4>Contact</h4>
                 <p>Contact@loyalnetworks.co.uk <br>+44 20 xxxx xxxx <br>London, United Kingdom</p>
             </div>
             <div class="footerTopPart-FourthColumn">
-                <h1>Follow</h1>
+                <h4>Follow</h4>
                 <div class="footerTopPart-FourthColumn-icons">
-                    <img src="assets/instagram.png" alt="instagram-icon">
-                    <img src="assets/twitter.png" alt="twitter-icon">
-                    <img src="assets/communication.png" alt="facebook-icon">
+                    <a href="#" aria-label="Loyal Networks on Instagram"><img src="assets/instagram.png" alt=""></a>
+                    <a href="#" aria-label="Loyal Networks on Twitter"><img src="assets/twitter.png" alt=""></a>
+                    <a href="#" aria-label="Loyal Networks on Facebook"><img src="assets/communication.png" alt=""></a>
                 </div>
             </div>
         </section>
@@ -150,6 +187,7 @@
         </section>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

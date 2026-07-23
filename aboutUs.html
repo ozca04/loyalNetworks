@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/aboutUs.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>About Us</title>
 </head>
 
 <body>
     <header>
         <div class="header logo-container">
-            <img class="logo" src="assets/logo_w.png" alt="logo">
+            <img class="logo" src="assets/logo_w.png" alt="Loyal Networks">
         </div>
         <div class="header search-icon">
-            <img src="assets/search-13-32.png" alt="search-icon">
+            <img src="assets/search-13-32.png" alt="Search">
         </div>
         <nav class="header links-header">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="aboutUs.html">About Us</a>
         </nav>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
     <div class="wrap">
         <h1 class="title">About us</h1>
@@ -75,30 +82,75 @@
                 </div>
             </div>
         </div>
+
+        <div class="whoweserve">
+            <h2>Who we serve</h2>
+            <div class="whoweserve-grid">
+                <div class="whoweserve-item">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M4 21V7l8-4 8 4v14" />
+                            <path d="M9 21v-6h6v6" />
+                            <path d="M9 11h.01M15 11h.01M9 7h.01M15 7h.01" />
+                        </svg></div>
+                    <p>SMEs</p>
+                </div>
+                <div class="whoweserve-item">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <circle cx="6" cy="18" r="2" />
+                            <circle cx="18" cy="6" r="2" />
+                            <circle cx="18" cy="18" r="2" />
+                            <path d="M8 18h8M17 8l-8 8" />
+                        </svg></div>
+                    <p>Corporate & multi-site</p>
+                </div>
+                <div class="whoweserve-item">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M12 4L2 9l10 5 10-5-10-5z" />
+                            <path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5" />
+                        </svg></div>
+                    <p>Education</p>
+                </div>
+                <div class="whoweserve-item">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path
+                                d="M12 21s-7-4.35-9.5-8.5C.7 8.9 2.6 5 6.2 5 8.4 5 10 6.2 12 8.3 14 6.2 15.6 5 17.8 5c3.6 0 5.5 3.9 3.7 7.5C19 16.65 12 21 12 21z" />
+                        </svg></div>
+                    <p>Healthcare</p>
+                </div>
+                <div class="whoweserve-item">
+                    <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                            <path d="M3 9l1.5-5h15L21 9" />
+                            <path d="M3 9h18v11H3z" />
+                            <path d="M9 13h6" />
+                        </svg></div>
+                    <p>Retail</p>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <section class="footerTopPart">
             <div class="footerTopPart-FirstColumn">
-                <img src="assets/logo_w.png" alt="">
+                <img src="assets/logo_w.png" alt="Loyal Networks">
                 <p>Cisco-led network <br> infrastructure, security and <br> support for SME to enterprise</p>
             </div>
             <div class="footerTopPart-SecondColumn">
-                <h1>Site</h1>
+                <h4>Site</h4>
                 <h3><a href="index.html">Home</a></h3>
                 <h3><a href="services.html">Services</a></h3>
                 <h3><a href="aboutUs.html">About Us</a></h3>
 
             </div>
             <div class="footerTopPart-ThirdColumn">
-                <h1>Contact</h1>
+                <h4>Contact</h4>
                 <p>Contact@loyalnetworks.co.uk <br>+44 20 xxxx xxxx <br>London, United Kingdom</p>
             </div>
             <div class="footerTopPart-FourthColumn">
-                <h1>Follow</h1>
+                <h4>Follow</h4>
                 <div class="footerTopPart-FourthColumn-icons">
-                    <img src="assets/instagram.png" alt="instagram-icon">
-                    <img src="assets/twitter.png" alt="twitter-icon">
-                    <img src="assets/communication.png" alt="facebook-icon">
+                    <a href="#" aria-label="Loyal Networks on Instagram"><img src="assets/instagram.png" alt=""></a>
+                    <a href="#" aria-label="Loyal Networks on Twitter"><img src="assets/twitter.png" alt=""></a>
+                    <a href="#" aria-label="Loyal Networks on Facebook"><img src="assets/communication.png" alt=""></a>
                 </div>
             </div>
         </section>
@@ -109,6 +161,7 @@
         </section>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

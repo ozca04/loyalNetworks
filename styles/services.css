@@ -5,15 +5,8 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
     background: #fff;
     color: #0C2340;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 .wrap {
@@ -40,7 +33,7 @@ h3 {
     font-size: 22px;
 }
 
-.left h1 {
+.left h2 {
     font-size: 44px;
     font-weight: 700;
     line-height: 1.1;
@@ -55,7 +48,7 @@ h3 {
     max-width: 320px;
 }
 
-.cta {
+.process-cta {
     margin-top: 28px;
     display: inline-flex;
     align-items: center;
@@ -65,7 +58,7 @@ h3 {
     color: #0C2340;
 }
 
-.cta span {
+.process-cta span {
     color: #2E7BF0;
 }
 
@@ -136,7 +129,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-.services-listing-inner h2 {
+.services-listing-inner h1 {
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     font-weight: 700;
     color: #0c2340;
@@ -172,6 +165,7 @@ h3 {
     width: 40px;
     height: 40px;
     margin-bottom: 0.5rem;
+    color: #2e7bf0;
 }
 
 .service-tile h3 {
@@ -197,4 +191,25 @@ h3 {
 
 .service-tile a:hover {
     color: #1a66d6;
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+    .services-listing {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .wrap {
+        padding: 3rem 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .star {
+        top: -2px;
+        right: 0;
+    }
 }
